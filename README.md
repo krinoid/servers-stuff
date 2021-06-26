@@ -34,3 +34,25 @@ $ sudo dpkg-reconfigure locales
 References:
 - https://stackoverflow.com/a/46939017
 - https://stackoverflow.com/a/63717870
+
+
+## Networking
+
+### WPA Supplicant
+
+Manually connect to wifi from the CLI, useful for debugging embedded stuff:
+```
+sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -i wlan0
+```
+
+Example `wpa_supplicant.conf`:
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US # CHANGE (radio regulation is different per country)
+
+network={
+	ssid="NETWORK_NAME"
+	psk="NETWORK_PASSWORD"
+}
+```
