@@ -56,3 +56,12 @@ network={
 	psk="NETWORK_PASSWORD"
 }
 ```
+
+## RaspberryPI
+
+```
+$ diskutil list
+$ diskutil unmountDisk /dev/diskN # N -> depends on the ID that SD Card got
+$ sudo dd bs=1m if=2021-05-07-raspios-buster-armhf-lite.img of=/dev/rdiskN; sync
+$ sudo diskutil eject /dev/rdiskN
+```
