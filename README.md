@@ -69,3 +69,7 @@ $ sudo diskutil eject /dev/rdiskN
 ## Disks & Storage
 
 `dd` tip: `Ctrl+T` shows progress of bytes transferred
+
+## Language, Locale
+
+setting `export LC_ALL=en_US.UTF-8` solves a lot of problems, e.g. related to [Perl & Locale issues](##perl--locale-issues) or issues with https://starship.rs
