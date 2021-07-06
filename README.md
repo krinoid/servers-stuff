@@ -72,4 +72,4 @@ $ sudo diskutil eject /dev/rdiskN
 
 ## Language, Locale
 
-setting `export LC_ALL=en_US.UTF-8` solves a lot of problems, e.g. related to [Perl & Locale issues](##perl--locale-issues) or issues with https://starship.rs
+setting `export LC_ALL=en_US.UTF-8` solves a lot of problems, e.g. related to [Perl & Locale issues](#perl--locale-issues) or issues with https://starship.rs
