@@ -66,6 +66,8 @@ $ sudo dd bs=1m if=2021-05-07-raspios-buster-armhf-lite.img of=/dev/rdiskN; sync
 $ sudo diskutil eject /dev/rdiskN
 ```
 
+rPi kernel headers package: `raspberrypi-kernel-headers`
+
 ## Disks & Storage
 
 `dd` tip: `Ctrl+T` shows progress of bytes transferred
